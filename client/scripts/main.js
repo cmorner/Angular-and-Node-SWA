@@ -22,7 +22,7 @@ angular.module('App')
 				when('/item/view', {
 					templateUrl: 'partials/item-view.html',
 					controller: 'viewItemController'
-				}).
+				});
 		}]);
 
 angular.module('App.controllers', []);
