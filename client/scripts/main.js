@@ -1,36 +1,28 @@
-angular.module('App', ['App.controllers']);
+angular.module('App', [
+	'App.controllers',
+	'ngRoute'
+	]);
+
+angular.module('App')
+	.config(['$routeProvider',
+		function ($routeProvider) {
+			$routeProvider.
+				when('/items', {
+					templateUrl: 'partials/item-list.html',
+					controller: 'listItemsController'
+				}).
+				when('/item/add', {
+					templateUrl: 'partials/item-add.html',
+					controller: 'addItemController'
+				}).
+				when('/item/edit', {
+					templateUrl: 'partials/item-edit.html',
+					controller: 'editItemController'
+				}).
+				when('/item/view', {
+					templateUrl: 'partials/item-view.html',
+					controller: 'viewItemController'
+				}).
+		}]);
 
 angular.module('App.controllers', []);
-
-angular.module('App.controllers')
-	.controller('listItemsController', [
-		'$scope',
-		function ($scope) {
-			$scope.items = {
-				{
-					header: 'Målning dinosaurie',
-					img: 'imgUrl',
-					description: 'Akvarell målning gjord i färgglada färger',
-					artist: 'Anna Mörner'
-				},
-				{
-					header: 'Målning dinosaurie',
-					img: 'imgUrl',
-					description: 'Akvarell målning gjord i färgglada färger',
-					artist: 'Anna Mörner'
-				},
-				{
-					header: 'Målning dinosaurie',
-					img: 'imgUrl',
-					description: 'Akvarell målning gjord i färgglada färger',
-					artist: 'Anna Mörner'
-				},
-				{
-					header: 'Målning dinosaurie',
-					img: 'imgUrl',
-					description: 'Akvarell målning gjord i färgglada färger',
-					artist: 'Anna Mörner'
-				},
-			}
-
-		}]);
