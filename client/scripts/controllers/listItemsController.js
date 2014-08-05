@@ -2,7 +2,7 @@ angular.module('App.controllers')
 .controller('listItemsController', [
 	'$scope',
 	function ($scope) {
-		$scope.items = {
+		$scope.items = [
 			{
 				header: 'Målning dinosaurie',
 				img: 'imgUrl',
@@ -27,5 +27,5 @@ angular.module('App.controllers')
 				description: 'Akvarell målning gjord i färgglada färger',
 				artist: 'Anna Mörner'
 			},
-		}
+		];
 	}]);
