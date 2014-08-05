@@ -6,7 +6,7 @@
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
-		<script type="text/javascript" src="bower_components/angular/angular-route.js"></script>
+		<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 		<script type="text/javascript" src="scripts/main.js"></script>
 		<script type="text/javascript" src="scripts/controllers/listItemsController.js"></script>
 		<script type="text/javascript" src="scripts/controllers/addItemController.js"></script>
@@ -14,9 +14,9 @@
 		<script type="text/javascript" src="scripts/controllers/viewItemController.js"></script>
 	</head>
 	<body ng-app="App">
-		<div ng-controller="listItemsController">
-			<p>Listing of art including search and filtering</p>
+		<div ng-view>
 		</div>
+		<p>Listing of art including search and filtering</p>
 		<p>Add/edit/remove add for artpiece</p>
 		<p>View art Add and Contact the advertiser</p>
 
