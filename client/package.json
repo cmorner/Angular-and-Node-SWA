@@ -1,0 +1,17 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "description": "Used for developing the client",
+  "main": "index.js",
+  "dependencies": {
+    "grun": "^0.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carl Mörner",
+  "license": "ISC"
+}
