@@ -1,3 +1,4 @@
 body {
-	background: orange;
-}
+  background: blue; }
+  body div {
+    border: 1px solid black; }
