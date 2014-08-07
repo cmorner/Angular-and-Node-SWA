@@ -13,12 +13,23 @@ module.exports = function (grunt) {
 					hostname: '*'
 				}
 			}
+		},
+		sass: {
+			dist: {
+				options: {
+					style: 'expanded'
+				},
+				files: {
+					'css/main.css': 'scss/main.scss'
+				}
+			}
 		}
 	});
 
 	//Load plugins
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 
 	// Register tasks
-	grunt.registerTask('server', ['connect']);
+	grunt.registerTask('server', ['sass', 'connect']);
 };
