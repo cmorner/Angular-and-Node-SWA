@@ -29,6 +29,12 @@
 				files: '**/*.scss',
 				tasks: ['sass']
 			}
+		},
+		concurrent: {
+			dev: ['connect', 'watch'],
+			options: {
+				logConcurrentOutput: true
+			}
 		}
 	});
 
@@ -36,8 +42,9 @@
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-concurrent');
 
 	// Register tasks
 	grunt.registerTask('server', ['sass', 'connect']);
-	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('default', ['concurrent:dev']);
 };
