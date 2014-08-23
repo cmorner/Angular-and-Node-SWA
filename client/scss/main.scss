@@ -1,10 +1,14 @@
 // Variables
-$background: light-gray;
-$box-bg: cornsilk;
+$color: #000;
+$background: gray;
+$box-bg: orange;
+$border-color: white; 
 
 // Base
 body {
 	background: $background;
+	font-family: 'Arimo', sans-serif;
+	color: $color;
 }
 
 ul {
@@ -36,6 +40,7 @@ li {
 .box {
 	box-sizing: border-box;
 	background: $box-bg;
-	border: 1px solid darkgray;
+	border: 1px solid $border-color;
 	border-radius: 8px;
+	padding: 5px;
 }
