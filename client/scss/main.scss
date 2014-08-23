@@ -1,7 +1,7 @@
 // Variables
 $color: #000;
-$background: gray;
-$box-bg: orange;
+$background: #EEEEEE;
+$box-bg: #E9E9E9;
 $border-color: white; 
 
 // Base
@@ -20,6 +20,14 @@ ul {
 
 li {
 	display: block;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.2em;
 }
 
 .main-wrapper {
