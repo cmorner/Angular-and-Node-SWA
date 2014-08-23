@@ -1,6 +1,41 @@
+// Variables
+$background: light-gray;
+$box-bg: cornsilk;
+
+// Base
 body {
-	background: green;
-	div {
-		border: 1px solid orange;
+	background: $background;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+li {
+	display: block;
+}
+
+.main-wrapper {
+	width: 940px;
+	padding: 0 10px 0;
+	margin: auto;
+}
+
+.col-1 {
+	width: 220px;
+	float: left;
+	margin: 0 20px 20px 0;
+	&:nth-child(4n) {
+		margin-right: 0;
 	}
+}
+
+.box {
+	box-sizing: border-box;
+	background: $box-bg;
+	border: 1px solid darkgray;
+	border-radius: 8px;
 }

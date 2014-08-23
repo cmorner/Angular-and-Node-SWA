@@ -27,5 +27,29 @@ angular.module('App.controllers')
 				description: 'Akvarell målning gjord i färgglada färger',
 				artist: 'Anna Mörner'
 			},
+						{
+				header: 'Målning dinosaurie',
+				img: 'imgUrl',
+				description: 'Akvarell målning gjord i färgglada färger',
+				artist: 'Anna Mörner'
+			},
+			{
+				header: 'Målning dinosaurie',
+				img: 'imgUrl',
+				description: 'Akvarell målning gjord i färgglada färger',
+				artist: 'Anna Mörner'
+			},
+			{
+				header: 'Målning dinosaurie',
+				img: 'imgUrl',
+				description: 'Akvarell målning gjord i färgglada färger',
+				artist: 'Anna Mörner'
+			},
+			{
+				header: 'Målning dinosaurie',
+				img: 'imgUrl',
+				description: 'Akvarell målning gjord i färgglada färger',
+				artist: 'Anna Mörner'
+			}
 		];
 	}]);

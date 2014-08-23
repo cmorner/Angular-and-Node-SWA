@@ -1,9 +1,11 @@
 <div ng-controller="listItemsController">
 	<h1>Artiklar</h1>
-	<p ng-repeat="item in items">
-		{{item.header}}
-		{{item.img}}
-		{{item.description}}
-		{{item.artist}}
-	</p>
+	<ul>
+		<li ng-repeat="item in items" class="col-1 box">
+			{{item.header}}
+			{{item.img}}
+			{{item.description}}
+			{{item.artist}}
+		</li>
+	</ul>
 </div>
