@@ -19,7 +19,7 @@ angular.module('App')
 					templateUrl: 'partials/item-edit.html',
 					controller: 'editItemController'
 				}).
-				when('/item/view', {
+				when('/item/view/:itemId', {
 					templateUrl: 'partials/item-view.html',
 					controller: 'viewItemController'
 				}).

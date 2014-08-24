@@ -3,6 +3,8 @@ $color: #000;
 $background: #EEEEEE;
 $box-bg: #E9E9E9;
 $border-color: white; 
+$border-radius: 8px;
+
 
 // Base
 body {
@@ -35,6 +37,17 @@ p {
 	margin: 5px 0;
 }
 
+input {
+	border: none;
+	padding: 5px;
+	border-radius: $border-radius;
+}
+	
+a {
+	text-decoration: none;
+	color: $color;
+}
+
 .full-width {
 	width: 100%;
 }
@@ -47,6 +60,16 @@ p {
 	width: 940px;
 	padding: 0 10px 0;
 	margin: auto;
+}
+
+ul.navigation {
+	li {
+		float: left;
+		margin-right: 5px;
+		a {
+			font-weight: bold;
+		}
+	}
 }
 
 .col-1 {
@@ -62,6 +85,6 @@ p {
 	box-sizing: border-box;
 	background: $box-bg;
 	border: 1px solid $border-color;
-	border-radius: 8px;
+	border-radius: $border-radius;
 	padding: 5px;
 }
