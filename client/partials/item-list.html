@@ -1,11 +1,16 @@
 <div ng-controller="listItemsController">
-	<h1>Artiklar</h1>
+	<div>
+		<input type="text" placeholder="Konstverk, konstnär, stil..">
+	</div>
 	<ul>
 		<li ng-repeat="item in items" class="col-1 box">
-			<h2>{{item.header}}</h2>
-			<img src="resources/img/basquette.jpg" class="full-width">
-			<p class="bold">Konstnär: {{item.artist}}</p>
-			{{item.description}}
+			<a ng-href="#item/view/{{item.id}}">
+				<h2>{{item.header}}</h2>
+				<img src="resources/img/basquette.jpg" class="full-width">
+				<p class="bold">Konstnär: {{item.artist}}</p>
+				<p class="bold">Pris: {{item.price}}kr</p>
+				{{item.description}}
+			</a>
 		</li>
 	</ul>
 </div>
