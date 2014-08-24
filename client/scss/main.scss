@@ -28,10 +28,19 @@ h1, h2 {
 
 h2 {
 	font-size: 1.2em;
+	margin: 6px 0;
+}
+
+p {
+	margin: 5px 0;
 }
 
 .full-width {
 	width: 100%;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 .main-wrapper {
