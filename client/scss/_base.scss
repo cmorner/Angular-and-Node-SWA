@@ -1,0 +1,82 @@
+// Base
+body {
+	background: $background;
+	font-family: 'Arimo', sans-serif;
+	color: $color;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+li {
+	display: block;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.2em;
+	margin: 6px 0;
+}
+
+p {
+	margin: 5px 0;
+}
+
+input {
+	border: none;
+	padding: 5px;
+	border-radius: $border-radius;
+}
+	
+a {
+	text-decoration: none;
+	color: $color;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.main-wrapper {
+	width: 940px;
+	padding: 0 10px 0;
+	margin: auto;
+}
+
+ul.navigation {
+	li {
+		float: left;
+		margin-right: 5px;
+		a {
+			font-weight: bold;
+		}
+	}
+}
+
+.col-1 {
+	width: 220px;
+	float: left;
+	margin: 0 20px 20px 0;
+	&:nth-child(4n) {
+		margin-right: 0;
+	}
+}
+
+.box {
+	box-sizing: border-box;
+	background: $box-bg;
+	border: 1px solid $border-color;
+	border-radius: $border-radius;
+	padding: 5px;
+}
