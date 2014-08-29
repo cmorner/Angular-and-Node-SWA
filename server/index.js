@@ -1,9 +1,9 @@
 var express = require('express');
 var app = express();
 
-app.get();
+//app.get('/');
 
-console.log('express', express);
+app.listen('3000');
 
 // POST /item/add
 // POST /item/edit
