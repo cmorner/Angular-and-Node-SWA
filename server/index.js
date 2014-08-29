@@ -1,33 +1,33 @@
+//http://runnable.com/UTlPPF-f2W1TAAEe/render-jade-with-express-for-node-js
+
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser')
 
-app.use(bodyParser.urlencoded({ extended: true}));
-app.use(bodyParser.json());
 
 var port = process.env.PORT || 3000;
 
-var router = express.Router();
+app.use(express.static(__dirname + '/public'));
+app.use(express.errorHandler());
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.json());
 
-
-app.set('title', 'SA');
-
-app.use(function (req, res, next) {
-	console.log(req.method + ' ' + req.url);
-	next();
-});
-
+app.set('view engine', 'jade');
 
 // app.get('/', function (req, res) {
 // 	res.render('index');
 // });
 
-router.get('/items/:dynamic', function (req, res) {
+app.get('/', function (req, res) {
+	res.render('index');
+});
+
+app.get('/items/:dynamic', function (req, res) {
 	res.json({ message: 'items:D' });
 	console.log('res:', res);
 });
 
-router.get('/item/', function (req, res) {
+app.get('/item/', function (req, res) {
 	res.json({title: 'En vacker tafla'});
 });
 
