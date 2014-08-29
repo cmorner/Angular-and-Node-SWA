@@ -1,6 +1,12 @@
+var express = require('express');
+var app = express();
 
-POST /item/add
-POST /item/edit
-POST /item/remove
+app.get();
 
-GET /items/#category/?search=string
+console.log('express', express);
+
+// POST /item/add
+// POST /item/edit
+// POST /item/remove
+
+// GET /items/#category/?search=string
